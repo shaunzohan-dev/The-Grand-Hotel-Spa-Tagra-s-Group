@@ -1,82 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Grand Resort</title>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="index.css" />
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="index.css">
 
-  <!-- Font Awesome -->
+  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/a2e0e6f5ad.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
   <!-- ===== HEADER ===== -->
-  <header id="header">
-    <h1 class="logo">The Grand Resort</h1>
+  <header>
+    <div class="logo">The Grand Resort</div>
     <nav>
-      <ul class="nav-list">
-        <li><a href="#home">🏠 Home</a></li>
-        <li><a href="#about">ℹ️ About</a></li>
-        <li><a href="#activities">💡 Activities</a></li>
-        <li><a href="#contact">📞 Contact</a></li>
+      <ul>
+        <li><a href="#home">🏠Home</a></li>
+        <li><a href="#about">ℹ️About</a></li>
+        <li><a href="#activities">💡Activities</a></li>
+        <li><a href="#contact">📞Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <p>WELCOME TO</p>
-      <h2>The Grand</h2>
-      <p>Resort & Spa Hotel</p>
-      <button class="btn-primary">LEARN MORE</button>
-    </div>
+  <!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p>WELCOME TO</p>
+    <h1>The Grand</h1>
+    <p>Resort & Spa Hotel</p>
+    <button>LEARN MORE</button>
+  </div>
 
-    <div class="resort-description">
-      <h3>Experience Luxury & Serenity</h3>
-      <p>
-        Nestled between crystal-clear waters and lush tropical landscapes,
-        <strong>The Grand Resort</strong> offers an unforgettable escape from the everyday.
-        Enjoy world-class accommodations, exquisite dining, and rejuvenating spa experiences —
-        where every moment is designed to inspire and delight.
-      </p>
-    </div>
-  </section>
+  <!-- ===== RESORT DESCRIPTION (on the home section) ===== -->
+  <div class="resort-description">
+    <h2>Experience Luxury & Serenity</h2>
+    <p>
+      Nestled between crystal-clear waters and lush tropical landscapes, 
+      <strong>The Grand Resort</strong> offers an unforgettable escape from the everyday. 
+      Enjoy world-class accommodations, exquisite dining, and rejuvenating spa experiences — 
+      where every moment is designed to inspire and delight.
+    </p>
+  </div>
+</section>
+
+
+  
 
   <!-- ===== ACCOMMODATIONS ===== -->
   <section class="section accommodations-bg" id="about">
     <div class="overlay"></div>
     <div class="content-wrapper">
       <h2>Accommodations</h2>
-      <div class="card-grid">
-        <article class="card room" data-room="Deluxe Room">
-          <img src="https://i.pinimg.com/1200x/87/9d/44/879d44b2442d2345be6f87f045208ffa.jpg" alt="Deluxe Room" loading="lazy">
-          <div class="card-info">
+      <div class="accommodations">
+        <div class="room">
+          <img src="https://i.pinimg.com/1200x/87/9d/44/879d44b2442d2345be6f87f045208ffa.jpg" alt="Deluxe Room">
+          <div class="room-info">
             <small>2 adults | 1 child below 7</small>
             <h3>Deluxe Room</h3>
             <p>From ₱10,000 a night</p>
           </div>
-        </article>
+        </div>
 
-        <article class="card room" data-room="Deluxe Sea View">
-          <img src="https://i.pinimg.com/736x/9b/43/5e/9b435e5dad72b83fcf03c317707e4771.jpg" alt="Deluxe Sea View Room" loading="lazy">
-          <div class="card-info">
+        <div class="room">
+          <img src="https://i.pinimg.com/736x/9b/43/5e/9b435e5dad72b83fcf03c317707e4771.jpg" alt="Sea View">
+          <div class="room-info">
             <small>2 adults | 1 child below 7</small>
             <h3>Deluxe Sea View</h3>
             <p>From ₱20,000 a night</p>
           </div>
-        </article>
+        </div>
 
-        <article class="card room" data-room="Premier City View">
-          <img src="https://i.pinimg.com/736x/91/26/7f/91267f7c0d820b7abbeab9bda4993178.jpg" alt="Premier City View Room" loading="lazy">
-          <div class="card-info">
+        <div class="room">
+          <img src="https://i.pinimg.com/736x/91/26/7f/91267f7c0d820b7abbeab9bda4993178.jpg" alt="City View">
+          <div class="room-info">
             <small>2 adults | 1 child below 7</small>
             <h3>Premier City View</h3>
             <p>From ₱25,000 a night</p>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
@@ -86,71 +91,69 @@
     <div class="overlay"></div>
     <div class="content-wrapper">
       <h2>Activities</h2>
-      <div class="card-grid">
-        <article class="card">
-          <img src="https://i.pinimg.com/1200x/3c/c0/68/3cc06805b9d29e63dba7543642444ca6.jpg" alt="Scuba Diving" loading="lazy">
-          <div class="card-info">
+      <div class="activities">
+        <div class="activity">
+          <img src="https://i.pinimg.com/1200x/3c/c0/68/3cc06805b9d29e63dba7543642444ca6.jpg" alt="Scuba Diving">
+          <div class="activity-info">
             <h3>Scuba Diving</h3>
             <p>Explore stunning coral reefs and vibrant marine life with expert guides.</p>
           </div>
-        </article>
+        </div>
 
-        <article class="card">
-          <img src="https://i.pinimg.com/1200x/64/52/ad/6452ad5a602aeefadf09264d1623ca00.jpg" alt="Spa and Wellness" loading="lazy">
-          <div class="card-info">
+        <div class="activity">
+          <img src="https://i.pinimg.com/1200x/64/52/ad/6452ad5a602aeefadf09264d1623ca00.jpg" alt="Spa and Wellness">
+          <div class="activity-info">
             <h3>Spa & Wellness</h3>
             <p>Relax and rejuvenate with our world-class spa treatments and massages.</p>
           </div>
-        </article>
+        </div>
 
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="City Tour" loading="lazy">
-          <div class="card-info">
+        <div class="activity">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="City Tour">
+          <div class="activity-info">
             <h3>City Tour</h3>
             <p>Discover the rich culture and attractions of the local city with guided tours.</p>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== PROMOS ===== -->
-  <section class="section promos-bg">
+  <!-- ===== PROMOS AND OFFERS ===== -->
+  <section class="promos promos-bg">
     <div class="overlay"></div>
     <div class="content-wrapper">
       <h2>Promos & Offers</h2>
-      <div class="promo-list">
-        <div class="promo-card">
-          <h3>Holiday Special!</h3>
-          <p>Book 3 nights and get the 4th night free. Experience paradise at its finest.</p>
-        </div>
+      <div class="promo-card">
+        <h3>Holiday Special!</h3>
+        <p>Book 3 nights and get the 4th night free. Experience paradise at its finest.</p>
+      </div>
 
-        <div class="promo-card">
-          <h3>Summer Escape Package</h3>
-          <p>Enjoy 20% off all bookings from April to June, including complimentary breakfast.</p>
-        </div>
+      <div class="promo-card">
+        <h3>Summer Escape Package</h3>
+        <p>Enjoy 20% off all bookings from April to June, including complimentary breakfast.</p>
       </div>
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section class="section social-bg" id="contact">
+  <!-- ===== CONTACT / SOCIAL SECTION ===== -->
+  <section class="social social-bg" id="contact">
     <div class="overlay"></div>
     <div class="content-wrapper">
       <h2>Connect With Us</h2>
       <div class="social-buttons">
-        <a href="https://www.facebook.com/profile.php?id=61579097212858&mibextid=wwXIfr&rdid=StQz3daZ6cgbg0ZM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GnsKrSgHb#" target="_blank" class="btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
-        <a href="https://www.facebook.com/profile.php?id=61579097212858&mibextid=wwXIfr&rdid=StQz3daZ6cgbg0ZM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GnsKrSgHb#" target="_blank" class="btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61579097212858&mibextid=wwXIfr&rdid=1FZ9aC1kqFSa0wSW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GnsKrSgHb%2F%3Fmibextid%3DwwXIfr#" class="btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=61579097212858&mibextid=wwXIfr&rdid=1FZ9aC1kqFSa0wSW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GnsKrSgHb%2F%3Fmibextid%3DwwXIfr#" class="btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
         <a href="mailto:example@gmail.com" class="btn gmail"><i class="fas fa-envelope"></i> Gmail</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== RESERVATION MODAL ===== -->
-  <div class="reservation-modal" id="reservationModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <!-- ===== RESERVATION FORM MODAL ===== -->
+  <div class="reservation-modal" id="reservationModal">
     <div class="modal-content">
-      <button class="close-btn" id="closeModal" aria-label="Close modal">&times;</button>
-      <h2 id="modalTitle">Reserve Your Stay</h2>
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Reserve Your Stay</h2>
       <form id="reservationForm">
         <label for="roomType">Room Type</label>
         <input type="text" id="roomType" name="roomType" readonly>
@@ -180,8 +183,7 @@
     © 2025 The Grand Resort. All rights reserved.
   </footer>
 
-  <!-- Script -->
+  <!-- Link to JS -->
   <script src="index.js"></script>
 </body>
 </html>
-
